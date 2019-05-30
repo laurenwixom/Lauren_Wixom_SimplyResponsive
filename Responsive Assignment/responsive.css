@@ -1,0 +1,64 @@
+ h1{
+	background-color:grey;
+}
+body p{
+	background-color:grey;
+}
+
+section p{
+	background-color: yellow;
+}
+.text-1 { 
+  background-color: yellow;
+ }
+
+
+.text-2 {display:none;
+}
+
+
+.text-3 { 
+
+	display:none;
+}
+
+
+@media only screen and (min-width: 1024px){
+     /* we will set these stylings only if the device is a screen with a width of 480px or less */
+     .text-1 {
+         display:inline-block;
+         background-color:yellow;
+
+     	}
+       .text-2 { display:none; }
+       .text-3 { display:none; }
+
+    }
+@media only screen and (max-width: 1023px){
+     /* we will set these stylings only if the device is a screen with a width of 480px or less */
+     .text-2 {
+         display:inline-block;
+         background-color:yellow;
+
+     	}
+       .text-1 { display:none; }
+       .text-3 { display:none; }
+
+     }
+@media only screen and (max-width: 480px){
+     /* we will set these stylings only if the device is a screen with a width of 480px or less */
+     .text-3 {
+         display:inline-block;
+         background-color:yellow;
+
+     	}
+       .text-1 { display:none; }
+       .text-2{ display:none; }
+
+     }
+}
+
+
+
+
+
